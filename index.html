@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>The Final Countdown</title>
+	<meta name="description" content="Caitlin Countdown">
+	<meta name="author" content="The Big Marn">
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<script src="phonegap.js"></script>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/countdown.js"></script>
+	
+	<script>
+	
+		$(document).ready(function(){
+			$("#countdown").countdown({
+				date: "28 november 2014 12:00:00",
+				format: "on"
+			},
+			
+			function() {
+				
+			});
+		});
+	
+	</script>
+</head>
+<body>
+
+	
+	<header class="container">
+		<img src="images/78f19df8256411e2b9d422000a1fa429_7.jpg" alt="Caitlin" height="306" width="306" />
+	</header>
+	
+	
+	
+	<div class="timer-area">
+		
+		<h1>Turning 20something in...</h1>
+		
+		<ul id="countdown">
+			<li>
+				<span class="days">00</span>
+				<p class="timeRefDays">days</p>
+			</li>
+			<li>
+				<span class="hours">00</span>
+				<p class="timeRefHours">hours</p>
+			</li>
+			<li>
+				<span class="minutes">00</span>
+				<p class="timeRefMinutes">minutes</p>
+			</li>
+			<li>
+				<span class="seconds">00</span>
+				<p class="timeRefSeconds">seconds</p>
+			</li>
+		</ul>
+		
+	</div> 
+	
+
+	
+	
+	</div> 
+	
+	
+	<footer id="main-footer">
+	  <p>&copy; Copyright 2013 Big Marn Web Development.</p>
+	
+	</footer>
+
+</body>
+</html>
